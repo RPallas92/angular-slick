@@ -93,7 +93,7 @@ angular.module('slick', []).directive('slick', [
               onBeforeChange: attrs.onBeforeChange ? scope.onBeforeChange : void 0,
               onAfterChange: function (sl, index) {
                 if (attrs.onAfterChange) {
-                  scope.onAfterChange();
+                  scope.onAfterChange({ "selection": sl, "index": index });
                 }
                 if (currentIndex != null) {
                   return scope.$apply(function () {

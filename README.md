@@ -46,6 +46,14 @@ angular.module('MyApp', ['slick']);
 </slick>
 ```
 
+- To process on after change events use `on-after-chagne` event. Example:
+
+```html
+<slick init-onload=true on-after-change="OnAfterChange(selection,index)">
+  ...
+</slick>
+```
+
 - If you wanna read about possible settings, go [here](http://kenwheeler.github.io/slick/#settings).
 
 That's it!
